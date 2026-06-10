@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Hero() {
   const roles = [
     {
-      text: "Full Stack Developor 🚀",
+      text: "Full Stack Developer 🚀",
       style:
         "bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text font-bold",
     },
