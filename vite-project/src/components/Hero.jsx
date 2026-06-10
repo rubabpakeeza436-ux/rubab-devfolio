@@ -42,15 +42,15 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-4"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-6 py-20 overflow-hidden"
     >
-      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl gap-10">
 
         {/* LEFT SIDE */}
         <div className="text-center md:text-left md:w-1/2">
 
-          {/* NAME LINE */}
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
+          {/* NAME */}
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Hey{" "}
             <span className="inline-block origin-[70%_70%] animate-[wave_2.5s_ease-in-out_infinite]">
               👋
@@ -62,7 +62,7 @@ function Hero() {
           </h1>
 
           {/* ROLE */}
-          <h2 className="text-lg sm:text-2xl md:text-4xl mb-6">
+          <h2 className="text-lg sm:text-2xl md:text-4xl mb-6 leading-relaxed">
             I'm{" "}
             <span className={`transition-all duration-500 ${roles[index].style}`}>
               {roles[index].text}
@@ -70,13 +70,14 @@ function Hero() {
             <span className="animate-pulse">|</span>
           </h2>
 
-          <p className="text-gray-400 mb-8 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
-            I build modern, responsive and scalable web applications using React, Node.js and MongoDB.
+          {/* DESCRIPTION */}
+          <p className="text-gray-400 mb-8 max-w-lg mx-auto md:mx-0 text-sm sm:text-base leading-7">
+            I build modern, responsive and scalable web applications using
+            React, Node.js and MongoDB.
           </p>
 
           {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-
             <a href="#projects">
               <button className="bg-purple-600 hover:bg-purple-700 transition px-6 py-3 rounded-xl shadow-lg shadow-purple-900/40 w-full sm:w-auto">
                 View Projects
@@ -88,26 +89,21 @@ function Hero() {
                 Contact Me
               </button>
             </a>
-
           </div>
-
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+        <div className="md:w-1/2 flex justify-center">
+          <div className="relative overflow-hidden">
 
-          <div className="relative">
-
-            <div className="absolute -inset-3 sm:-inset-4 bg-purple-600 blur-2xl opacity-30 rounded-full"></div>
+            <div className="absolute -inset-4 bg-purple-600 blur-2xl opacity-30 rounded-full"></div>
 
             <img
               src="/cute girl.jpg"
               alt="profile"
-              className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-purple-500 shadow-2xl"
+              className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 object-cover rounded-full border-4 border-purple-500 shadow-2xl"
             />
-
           </div>
-
         </div>
 
       </div>
