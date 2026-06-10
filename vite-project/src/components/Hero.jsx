@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Hero() {
-  const roler = [
+  const roles = [
     {
       text: "Full Stack Developer 🚀",
       style:
